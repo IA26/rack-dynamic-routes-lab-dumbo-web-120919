@@ -7,4 +7,6 @@ class Application
     if req.path=="/<ITEM NAME>"
       resp.write "You requested the songs"
     else
+      resp.write "Path not found"
+      resp
 end
