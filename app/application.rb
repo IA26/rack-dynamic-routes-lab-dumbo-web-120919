@@ -7,7 +7,7 @@ class Application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
-      if @@items.find{|item_instance| item_instance.name == item_name}
+      if =@@items.find{|item_instance| item_instance.name == item_name}
         resp.write item.price
       else 
         resp.status = 400
