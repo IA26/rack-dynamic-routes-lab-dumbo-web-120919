@@ -8,5 +8,5 @@ class Application
       resp.write "You requested the songs"
     else
       resp.write "Path not found"
-      resp
+      resp.status 404
 end
